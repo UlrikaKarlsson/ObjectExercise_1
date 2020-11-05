@@ -11,6 +11,10 @@ namespace ObjectExercise_1
         class Person
         {
             public string firstName = "", lastName = "";
+            public void Print()
+            {
+                Console.WriteLine($"{firstName} {lastName}");
+            }
         }
         static void Main(string[] args)
         {
@@ -19,11 +23,13 @@ namespace ObjectExercise_1
                 firstName = "Kalle",
                 lastName = "Anka" 
             };
+            P.Print();
             Person Q = new Person()
             {
                 firstName = "Kajsa",
                 lastName = "Anka"
             };
+            Q.Print();
 
         }
     }
