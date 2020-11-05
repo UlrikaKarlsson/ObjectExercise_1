@@ -15,6 +15,10 @@ namespace ObjectExercise_1
             {
                 Console.WriteLine($"{firstName} {lastName}");
             }
+            public string GetString()
+            {
+                return $"{firstName} {lastName}";
+            }
         }
         static void Main(string[] args)
         {
@@ -24,12 +28,14 @@ namespace ObjectExercise_1
                 lastName = "Anka" 
             };
             P.Print();
+            Console.WriteLine(P.GetString());
             Person Q = new Person()
             {
                 firstName = "Kajsa",
                 lastName = "Anka"
             };
             Q.Print();
+            Console.WriteLine(Q.GetString());
 
         }
     }
